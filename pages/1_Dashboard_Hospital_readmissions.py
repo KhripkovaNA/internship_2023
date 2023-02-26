@@ -1,5 +1,4 @@
 import streamlit as st
-from matplotlib import image
 import pandas as pd
 import os
 import matplotlib.pyplot as plt
@@ -26,7 +25,7 @@ df = df.rename(columns=col_dict)
 
 st.header("Dashboard - Hospitals Readmissions Data")
 
-img = image.imread(IMAGE_PATH)
+img = plt.imread(IMAGE_PATH)
 st.image(img)
 show_head = st.checkbox('show raw data')
 if show_head:
