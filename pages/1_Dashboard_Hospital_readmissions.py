@@ -94,7 +94,7 @@ if option_bar != 'Feature':
         pct_hist(df, option_bar, order=order, x_rotation=60)
     else:
         if option_bar == 'Age':
-            order = sorted(df[option].unique())
+            order = sorted(df['Age'].unique())
         elif option_bar in ['Glucose test', 'A1Ctest']:
             order = df['Glucose test'].value_counts().index
         else:
